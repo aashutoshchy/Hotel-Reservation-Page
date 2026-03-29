@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --bg-color: #f3f3f3;
+  --lin-grad: linear-gradient(to right, #000b02, #2f2e36, transparent);
+  --primary-text: #f49b33;
+
+  /* Fonts */
+  --main-text: Segoe UI;
+  --sec-text: Source Serif Pro;
+  --third-text: Poppins;
+}
+
+nav {
+  width: 100%;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 300px;
+  padding: 49px 141px;
+}
+
+.text-logo {
+  color: var(--primary-text);
+  font-size: 30px;
+}
+
+.text-logo span {
+  font-weight: 700;
+}
+
+.links,
+.links ul {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  gap: 30px;
+}
+
+.links ul li {
+  list-style: none;
+}
+
+.links ul li:first-child {
+  color: var(--primary-text);
+}
+
+.auth-btns button {
+  margin: 0 10px;
+  height: 41px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  outline: none;
+  font-weight: 500;
+}
+
+.sign-up-btn {
+  border: 1px solid var(--primary-text);
+  background: none;
+  color: var(--primary-text);
+}
+
+.login-btn {
+  border: none;
+  background-color: var(--primary-text);
+  color: var(--bg-color);
+}
+
+/* Hero Section */
+.hero-section {
+  height: 500px;
+  width: 100%;
+  background-color: var(--lin-grad);
+}
